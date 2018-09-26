@@ -1,0 +1,8 @@
+
+.thumb-grid {
+  flex-flow: row wrap;
+}
+
+.thumb {
+  margin: 2px;
+}
