@@ -62,15 +62,22 @@ SubMenuItem.prototype.render = function() {
 }
 
 
-const c_item1 = new MenuItem('smi1', "/catalogue/men", "Men");
-const c_item2 = new MenuItem('smi2', "/catalogue/women", "Women");
-const c_item3 = new MenuItem('smi3', "/catalogue/kids", "Kids");
-const sub_items = [c_item1, c_item2, c_item3];
+const c_item1 = new MenuItem('smi1', "/catalog/men", "Men");
+const c_item2 = new MenuItem('smi2', "/catalog/women", "Women");
+const c_item3 = new MenuItem('smi3', "/catalog/kids", "Kids");
+const c_item4 = new MenuItem('smi4', "/catalog/accessories", "Accessories");
+const sub_items = [c_item1, c_item2, c_item3, c_item4];
 
-const m_item1 = new MenuItem('mi1', "/", "Главная");
-const m_item2 = new SubMenuItem('mi2', "/catalogue/", "Каталог", sub_items);
-const m_item3 = new MenuItem('mi3', "/gallery/", "Галерея");
-const m_items = {0: m_item1, 1: m_item2, 2: m_item3};
+const p_item1 = new MenuItem('pmi1', "/promo/backtoschool", "Back To School");
+const p_item2 = new MenuItem('pmi2', "/catalog/sneaker", "Sneaker Day");
+const p_item3 = new MenuItem('pmi3', "/catalog/wintersale", "Winter Sale");
+const promo_items = [p_item1, p_item2, p_item3];
+
+const m_item1 = new MenuItem('mi1', "/", "Main");
+const m_item2 = new MenuItem('mi2', "/", "Profile");
+const m_item3 = new SubMenuItem('mi3', "/catalog/", "Catalog", sub_items);
+const m_item4 = new SubMenuItem('mi4', "/promo/", "Promo", promo_items);
+const m_items = {0: m_item1, 1: m_item2, 2: m_item3, 3: m_item4};
 
 const menu = new Menu("my_menu", "menu_class", m_items);
 
