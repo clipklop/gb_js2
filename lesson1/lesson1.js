@@ -8,6 +8,7 @@
 const CONFIG = [{
   href: '/',
   name: "Main",
+}, {
   href: '/catalog',
   name: "Catalog",  
 }, {
