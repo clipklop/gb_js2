@@ -40,13 +40,9 @@ class Menu extends Container {
   createItems(config) {
     for (let i = 0; i < config.length; i++) {
       this.items.push(new MenuItem(config[i].href, config[i].name));
-<<<<<<< HEAD
       if (config[i].items) {
         this.items.push(new Menu('submenu' + i, config[i].items))
       }
-=======
-      console.log(config[i])
->>>>>>> 314aa1bc95478fbfffbfce27729144a1d482441a
     }
   }
 
